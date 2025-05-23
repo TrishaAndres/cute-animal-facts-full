@@ -1,0 +1,66 @@
+.app {
+  text-align: center;
+  font-family: 'Comic Sans MS', cursive;
+  padding: 2rem;
+}
+.buttons button {
+  margin: 1rem;
+  padding: 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.card {
+  margin-top: 2rem;
+}
+.card img {
+  max-width: 300px;
+  border-radius: 20px;
+}
+
+
+.app {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.buttons {
+  margin: 1rem;
+}
+
+.buttons button {
+  margin: 0.5rem;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+  background-color: #f9c8c8;
+  transition: background-color 0.3s;
+}
+
+.buttons button:hover {
+  background-color: hsl(350, 78%, 77%);
+}
+
+.cards {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: hsl(275, 50%, 54%);
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  max-width: 300px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
