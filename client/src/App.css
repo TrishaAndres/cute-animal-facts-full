@@ -1,24 +1,28 @@
 body, html {
   margin: 0;
   padding: 0;
-  font-family: 'Comic Sans MS', cursive;
-  background-color: #f9f9f929;
   height: 100%;
   width: 100%;
+  font-family: 'Comic Sans MS', cursive;
+  background-color: #f9f9f929;
+  display: flex;
+  justify-content: center;
 }
 
 #root {
-  height: 100%;
+  width: 100%;
 }
+
 
 .app {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center;           
+  justify-content: center;       
   text-align: center;
-  min-height: 100vh;
+  height: 100vh;                 
   padding: 2rem;
-  margin-top: 4vh;
+  box-sizing: border-box;
 }
 
 h1 {
@@ -46,11 +50,10 @@ h1 {
 
 .cards {
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  gap: 2rem;
+  align-items: center;
   flex-wrap: wrap;
-  margin-top: 2rem;
+  gap: 2rem;
 }
 
 .card {
