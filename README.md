@@ -30,8 +30,11 @@ Welcome to **Cute Animal Facts** – a web app that serves up random fun facts a
 ## 📁 Project Structure
 
 cute-animal-facts-full/
+
 ├── client/ # React frontend
+
 ├── server/ # Express backend (dog facts)
+
 └── README.md
 
 ## 🛠️ Running Locally
