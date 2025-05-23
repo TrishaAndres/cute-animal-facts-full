@@ -38,7 +38,7 @@ function App() {
         setFact(factData.fact);
         setCatImage(imgData[0].url);
       } else {
-        const factRes = await fetch('http://localhost:3001/api/dog-fact');
+        const factRes = await fetch('https://cute-animal-facts-full.onrender.com/api/dog-fact');
         const factData = await factRes.json();
         setFact(factData.fact);
         const imgRes = await fetch('https://dog.ceo/api/breeds/image/random');
