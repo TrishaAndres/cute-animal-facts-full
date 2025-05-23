@@ -38,11 +38,11 @@ function App() {
         setFact(factData.fact);
         setCatImage(imgData[0].url);
       } else {
-        const factRes = await fetch('http://dog-api.kinduff.com/api/facts/?number=1');
+        const factRes = await fetch('http://localhost:3001/api/dog-fact');
         const factData = await factRes.json();
+        setFact(factData.fact);
         const imgRes = await fetch('https://dog.ceo/api/breeds/image/random');
         const imgData = await imgRes.json();
-        setFact(factData.facts[0]); // Fix for dog fact
         setDogImage(imgData.message);
       }
     }
@@ -66,7 +66,7 @@ function App() {
       </div>
     </div>
   );
-  
+
 }
 
 export default App;
